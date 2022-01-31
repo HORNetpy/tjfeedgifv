@@ -29,12 +29,10 @@ private val LightColorPalette = lightColors(
 
 @Composable
 fun TJFeedGifvTheme(darkTheme: Boolean = isSystemInDarkTheme(), content: @Composable() () -> Unit) {
-    val systemUiController = rememberSystemUiController()
     val colors = if (darkTheme) {
         DarkColorPalette
     } else {
         LightColorPalette
-        sys
     }
 
     MaterialTheme(
